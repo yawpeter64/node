@@ -567,6 +567,33 @@ The `MessagePort` class. See [`MessagePort`][] for more details.
 
 This variable may appear to be global but is not. See [`module`][].
 
+## `navigator`
+
+<!-- YAML
+added: REPLACEME
+-->
+
+> Stability: 1 - Experimental
+>
+> An implementation of the [Navigator API][]. Similar to [`window.navigator`][]
+> in browsers.
+
+### `navigator.platform`
+
+<!-- YAML
+added: REPLACEME
+-->
+
+* {string}
+
+A string identifying the operating system platform on which the Node.js process
+is running. For example, it returns 'Linux' on Linux, 'Darwin' on macOS, and
+'Win32' on Windows.
+
+```js
+console.log(`This process is running on ${navigator.platform}`);
+```
+
 ## `PerformanceEntry`
 
 <!-- YAML
@@ -980,6 +1007,7 @@ added: v18.0.0
 
 A browser-compatible implementation of [`WritableStreamDefaultWriter`][].
 
+[Navigator API]: https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object
 [Web Crypto API]: webcrypto.md
 [`--no-experimental-fetch`]: cli.md#--no-experimental-fetch
 [`--no-experimental-global-customevent`]: cli.md#--no-experimental-global-customevent
@@ -1037,6 +1065,7 @@ A browser-compatible implementation of [`WritableStreamDefaultWriter`][].
 [`setInterval`]: timers.md#setintervalcallback-delay-args
 [`setTimeout`]: timers.md#settimeoutcallback-delay-args
 [`structuredClone`]: https://developer.mozilla.org/en-US/docs/Web/API/structuredClone
+[`window.navigator`]: https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator
 [buffer section]: buffer.md
 [built-in objects]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 [module system documentation]: modules.md

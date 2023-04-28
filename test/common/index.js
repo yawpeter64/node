@@ -308,6 +308,10 @@ if (global.gc) {
   knownGlobals.push(global.gc);
 }
 
+if (global.navigator) {
+  knownGlobals.push(global.navigator);
+}
+
 if (global.Performance) {
   knownGlobals.push(global.Performance);
 }
